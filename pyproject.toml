@@ -1,0 +1,24 @@
+[project]
+name = "text-to-model-editing"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["diffusers[torch]>=0.15.0", "transformers>=4.30.0"]
+
+[project.optional-dependencies]
+notebook = [
+    "ipywidgets>=8.1.5",
+    "jupyterlab>=4.3.1",
+    "matplotlib>=3.9.3",
+]
+
+[dependency-groups]
+dev = ["mypy>=1.0.0", "pytest>=6.0.0", "ruff>=0.1.5"]
+
+[tool.uv]
+package = false
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
