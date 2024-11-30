@@ -81,7 +81,10 @@ class StableDiffusionModelEditingPipeline(SDTIME):
         lamb: float = 0.1,
         **kwargs,
     ) -> None:
-        # `restart_params` creates a copy of the object when restoring the original weights, which can lead to problems such as the device not being set correctly when exiting the pipeline. For these reasons, `restart_params` is set to `False`. If you want to restore the original weights, it is recommended to reload the pipeline.
+        # `restart_params` creates a copy of the object when restoring the original weights,
+        # which can lead to problems such as the device not being set correctly
+        # when exiting the pipeline. For these reasons, `restart_params` is set to `False`.
+        # If you want to restore the original weights, it is recommended to reload the pipeline.
         super().edit_model(
             source_prompt, destination_prompt, lamb, restart_params=False
         )
