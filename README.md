@@ -36,7 +36,7 @@ image_edited = output.images[0]
 image_edited
 ```
 
-You can find the notebook example in [notebooks/run_pipeline.ipynb](examples/).
+You can find the notebook example in [notebooks/run_pipeline.ipynb](notebooks/run_pipeline.ipynb).
 
 ## Comparison of the generated results
 
